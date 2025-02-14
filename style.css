@@ -1,0 +1,259 @@
+/* General Styles */
+body {
+    background-color: #000000; /* Latar belakang hitam */
+    color: #ffffff; /* Warna teks putih */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Glow Text Effect */
+  .glow-text {
+    color: #00FF00; /* Warna hijau neon */
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 20px #00FF00;
+  }
+  
+  /* Glow Border Effect */
+  .glow-border {
+    border: 2px solid #00FF00; /* Border hijau neon */
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 20px #00FF00;
+    border-radius: 10px; /* Sudut border melengkung */
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+  }
+  
+  /* Glow Button Effect */
+  .glow-button {
+    background-color: #000000; /* Latar belakang hitam */
+    color: #00FF00; /* Warna teks hijau neon */
+    border: 2px solid #00FF00; /* Border hijau neon */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 5px; /* Sudut tombol melengkung */
+  }
+  
+  .glow-button:hover {
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    transform: scale(1.05); /* Efek zoom kecil saat hover */
+  }
+  
+  /* Header / Navbar */
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    transition: text-shadow 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Portfolio Section */
+  .portfolio {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project {
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-10px); /* Efek naik saat hover */
+    box-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00, 0 0 35px #00FF00;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    border: 2px solid #00FF00;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #00FF00;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .back-to-top.visible {
+    display: block;
+  }
+
+  .sound-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  /* Efek Partikel Glowing */
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 0, 0.8); /* Warna kuning */
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 1);
+    animation: float 2s ease-out forwards;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: scale(0) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5) translateY(-50px);
+      opacity: 0;
+    }
+  }
+  
+  /* Efek Jedag Jedug */
+  @keyframes jedagJedug {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  .jedag-jedug {
+    animation: jedagJedug 0.5s infinite alternate;
+  }
+  
+  /* Tombol Back-to-Top */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffcc00;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .back-to-top.visible {
+    opacity: 1;
+  }
+  
